@@ -6,16 +6,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <title>Index</title>
 </head>
 <body>
-    <div>
+    <div class="text-center">
         <!-- Тут мы юзаем наш ViewBag -->
         <p>@ViewBag.Greeting World (from the view)</p>
         <p>У нас намечается ахуенная вечеринка!!!.<br />
         (Что то надо сделать)
         </p>
-        <a asp-action="RsvpForm">RSVP NOW</a>
+        <a class="btn btn-primary" asp-action="RsvpForm">RSVP NOW</a>
     </div>
 </body>
 </html>

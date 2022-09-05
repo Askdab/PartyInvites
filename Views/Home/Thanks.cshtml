@@ -7,20 +7,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <title>Thanks</title>
 </head>
-<body>
+<body class="text-center">
     <p>
         <h1>Thank you, @Model.Name</h1>
         @if (Model.WillAttend == true)
         {
-            @:Хорошо, что ты придешь. Будем тусовать!
+            @: Хорошо, что ты придешь. Будем тусовать!
         }
         else
         {
             @: Пидарас
         }
     </p>
-    <p>Нажми <a asp-action="ListResponses">сюда</a> чтобы чекнуть кто идет</p>
+    Нажми <a class="nav-link" asp-action="ListResponses">сюда</a> чтобы чекнуть кто идет
+    Нажми <a class="nav-link" asp-action="Index">сюда</a> чтобы вернуться
 </body>
 </html>
